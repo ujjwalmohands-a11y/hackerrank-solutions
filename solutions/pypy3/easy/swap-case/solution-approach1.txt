@@ -1,0 +1,23 @@
+# ──────────────────────────────────────────────────
+# Problem     sWAP cASE
+# Difficulty  Easy
+# Subdomain   Strings
+# Platform    HackerRank
+# Language    pypy3
+# Status      Accepted
+# Submitted   2026-07-08, 07:27 p.m.
+# ──────────────────────────────────────────────────
+
+def swap_case(s):
+    swapped = ""
+    
+    for i in range(len(s)):
+        if (s[i] == s[i].upper()):
+            swapped += s[i].lower()
+        elif (s[i] == s[i].lower()):
+            swapped += s[i].upper()
+    
+    
+    
+    
+    return swapped
