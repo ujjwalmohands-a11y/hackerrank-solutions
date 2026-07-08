@@ -1,0 +1,16 @@
+# ──────────────────────────────────────────────────
+# Problem     Mutations
+# Difficulty  Easy
+# Subdomain   Strings
+# Platform    HackerRank
+# Language    pypy3
+# Status      Accepted
+# Submitted   2026-07-08, 07:49 p.m.
+# ──────────────────────────────────────────────────
+
+def mutate_string(string, position, character):
+    string = list(string)
+    string[position] = character
+
+    return("".join(string))
+
