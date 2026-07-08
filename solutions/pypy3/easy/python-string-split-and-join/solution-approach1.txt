@@ -1,0 +1,23 @@
+# ──────────────────────────────────────────────────
+# Problem     String Split and Join
+# Difficulty  Easy
+# Subdomain   Strings
+# Platform    HackerRank
+# Language    pypy3
+# Status      Accepted
+# Submitted   2026-07-08, 07:36 p.m.
+# ──────────────────────────────────────────────────
+
+
+
+def split_and_join(line):
+    # write your code here
+    line = line.split(" ")
+    
+    hypen_converted = "-".join(line)
+    return(hypen_converted)
+
+if __name__ == '__main__':
+    line = input()
+    result = split_and_join(line)
+    print(result)
