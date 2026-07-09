@@ -1,0 +1,37 @@
+# ──────────────────────────────────────────────────
+# Problem     String Validators
+# Difficulty  Easy
+# Subdomain   Strings
+# Platform    HackerRank
+# Language    pypy3
+# Status      Accepted
+# Submitted   2026-07-09, 01:30 p.m.
+# ──────────────────────────────────────────────────
+
+if __name__ == '__main__':
+    s = input()
+    
+    line1 = False 
+    line2 = False
+    line3 = False
+    line4 = False
+    line5 = False 
+    
+    
+    for i in range(len(s)):
+        if (s[i].isalnum() == True):
+            line1 = True
+        if (s[i].isalpha() == True):
+            line2 = True
+        if (s[i].isdigit() == True):
+            line3 = True
+        if (s[i].islower() == True):
+            line4 = True
+        if (s[i].isupper() == True):
+            line5 = True
+
+    print(line1) 
+    print(line2)
+    print(line3)
+    print(line4)
+    print(line5)  
