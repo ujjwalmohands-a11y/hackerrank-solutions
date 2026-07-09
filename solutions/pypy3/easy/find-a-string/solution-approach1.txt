@@ -1,0 +1,24 @@
+# ──────────────────────────────────────────────────
+# Problem     Find a string
+# Difficulty  Easy
+# Subdomain   Strings
+# Platform    HackerRank
+# Language    pypy3
+# Status      Accepted
+# Submitted   2026-07-09, 01:12 p.m.
+# ──────────────────────────────────────────────────
+
+def count_substring(string, sub_string):
+    count = 0
+    SSlen = len(sub_string)
+    
+    for i in range(len(string) - SSlen + 1):
+        parts = string[i : i+SSlen]
+        
+        if(parts == sub_string):
+            count+=1
+        
+    
+
+    return count
+
